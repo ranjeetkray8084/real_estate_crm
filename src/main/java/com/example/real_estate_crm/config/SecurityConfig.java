@@ -42,7 +42,7 @@ public class SecurityConfig {
     @Bean
     public CorsConfigurationSource corsConfigurationSource() {
         CorsConfiguration config = new CorsConfiguration();
-        config.setAllowedOrigins(List.of("http://127.0.0.1:5500","http://127.0.0.1:5501","http://localhost:5173")); // Allow frontend to access API
+        config.setAllowedOrigins(List.of("http://127.0.0.1:5500","http://127.0.0.1:5501","http://localhost:5173","https://realcrm.netlify.app/")); // Allow frontend to access API
         config.setAllowedMethods(List.of("GET", "POST", "PUT", "DELETE", "OPTIONS")); // Specify allowed methods
         config.setAllowedHeaders(List.of("*"));  // Allow all headers
         config.setAllowCredentials(true); // Allow credentials (cookies, authorization headers, etc.)
